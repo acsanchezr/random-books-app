@@ -1,0 +1,15 @@
+.hidden {
+    display: none;
+}
+
+.book-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
