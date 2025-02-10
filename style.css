@@ -7,12 +7,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Georgia', serif; /* A softer, cozy font */
+    font-family: 'Roboto Serif', serif;
 }
 
 /* Body Styling */
 body {
-    background-color: #f5dcdc; /* Warm neutral background */
+    background: rgb(210,139,133);
+    background: linear-gradient(55deg, rgba(210,139,133,1) 0%, rgba(229,219,210,1) 82%) fixed;
     color: #333; /* Soft text color for readability */
     padding-top: 70px; /* Adjusted to prevent content from hiding behind navbar */
     display: flex;
@@ -25,14 +26,27 @@ body {
     max-width: 800px; /* Prevents it from stretching too wide */
     /* background: white; */
     padding: 40px;
-    border-radius: 10px; /* Soft rounded edges */
+    /* border-radius: 10px; Soft rounded edges */
     /* box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1); Subtle shadow for depth */
     text-align: center;
 }
 
+.book-excerpt {
+    background: #F3E0E0;
+    border-radius: 10px; /* Soft rounded edges */
+    padding: 40px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1); /*Subtle shadow for depth*/
+
+}
+
+h1, h2, h3, h4, h5, h6, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold for a strong presence */
+}
+
 /* Navbar Styles */
 nav {
-    background-color: #c49c9c; /* Warm, muted pink */
+    background-color: #D28B85;
     padding: 15px 0;
     position: fixed;
     top: 0;
@@ -50,7 +64,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: #F3E0E0;
     text-decoration: none;
     font-size: 18px;
     padding: 10px 15px;
@@ -69,21 +83,49 @@ nav ul li a:hover {
 }
 
 /* Button Styling */
-button {
+/* button {
     padding: 10px 20px;
     margin-top: 15px;
     cursor: pointer;
     border: none;
-    background: #c49c9c;
+    background: #D28B85;
     color: white;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 20px;
+    transition: background 0.3s;
+} */
+
+
+button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
     transition: background 0.3s;
 }
 
-button:hover {
-    background: #dbaeae;
+#generate-excerpt{
+    color: #333;
+    background: #E5DBD2;
+    border-color: #333;
+    border-width: .5px;
 }
+#generate-excerpt:hover {
+    background: #f5eee7;
+}
+
+#show-details{
+    background-color: #D28B85;
+    color: white;
+    border: none;
+}
+#show-details:hover{
+    background-color: #e7aba5;
+}
+/* button:hover {
+    background: #dbaeae;
+} */
 
 /* Book List */
 #book-list {

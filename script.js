@@ -36,7 +36,7 @@ function loadRandomBook() {
         // Hide the book details and reset button text to "Show Book Details"
         let details = document.getElementById("book-details");
         details.classList.add("hidden");
-        document.getElementById("show-details").textContent = "Show Book Details";
+        // document.getElementById("show-details").textContent = "Show Book Details";
     
 
 }
@@ -47,10 +47,10 @@ document.getElementById("show-details").addEventListener("click", function() {
     
     if (details.classList.contains("hidden")) {
         details.classList.remove("hidden");
-        this.textContent = "Hide Book Details";
+        this.textContent = "📘 hide book";
     } else {
         details.classList.add("hidden");
-        this.textContent = "Show Book Details";
+        this.textContent = "📖 reveal book";
     }
 });
 
